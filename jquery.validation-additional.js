@@ -1,5 +1,5 @@
     //custom method
-    jQuery.validator.addMethod("todayorfuturedateonly", function (value, element, params) {
+    jQuery.validator.addMethod("todayorfuturedateonly", function (value, element, param) {
 	
 		 if (!this.depend(param, element))
              return "dependency-mismatch";
