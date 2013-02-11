@@ -6,3 +6,13 @@
         return this.optional(element) || newvalue >= today;
     }, "Please enter current date or a future date in dd/MM/yyyy format");
 	
+	jQuery.validator.addClassRules({
+            holddaterule:
+                {
+                    todayfuturedateonly: function (e) {
+                        var existing = '01/01/2013';
+                        var changed = ($(e).val() != existing);
+                        return changed;
+                    }
+                }
+        });
