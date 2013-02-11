@@ -13,7 +13,7 @@
         var currdate = new Date();
         var today = new Date(currdate.getFullYear(), currdate.getMonth(), currdate.getDate());
 		if(value !=element.defaultValue)
-			return this.optional(element) || newvalue >= today
+			return this.optional(element) || newvalue >= today;
 		else
 			return true;
     }, "Please enter current date or a future date in dd/MM/yyyy format");
