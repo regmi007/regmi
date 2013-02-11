@@ -9,7 +9,7 @@
 	jQuery.validator.addClassRules({
             holddaterule:
                 {
-                    todayfuturedateonly: function (e) {
+                    todayorfuturedateonly: function (e) {
                         var existing = '01/01/2013';
                         var changed = ($(e).val() != existing);
                         return changed;
