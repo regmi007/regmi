@@ -1,5 +1,8 @@
     //custom method
-    jQuery.validator.addMethod("todayorfuturedateonly", function (value, element) {
+    jQuery.validator.addMethod("todayorfuturedateonly", function (value, element, params) {
+	
+		 if (!this.depend(param, element))
+                    return "dependency-mismatch";
         var newvalue = Date.parseExact(value, "d/M/yyyy");
         var currdate = new Date();
         var today = new Date(currdate.getFullYear(), currdate.getMonth(), currdate.getDate());
