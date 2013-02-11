@@ -15,7 +15,7 @@
 		if(value !=element.defaultValue)
 			return this.optional(element) || newvalue >= today
 		else
-			return true;;
+			return true;
     }, "Please enter current date or a future date in dd/MM/yyyy format");
 	
 	/*
